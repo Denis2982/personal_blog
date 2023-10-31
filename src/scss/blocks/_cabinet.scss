@@ -1,0 +1,48 @@
+.cabinet {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  @include mobile {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  &__form {
+    width: 34rem;
+  }
+
+  &__avatar {
+    img {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    @include mobile {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__file {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $blue;
+    text-decoration: underline;
+    cursor: pointer;
+    input {
+      display: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &-footer {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

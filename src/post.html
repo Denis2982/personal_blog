@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html',{ "title":"Пост" })
+  <body>
+    @@include('html/header.html',{}) 
+    
+    @@include('html/sidebar.html',{})
+
+    <main class="main">
+      <div class="container">
+        <!-- ---------------------------------------------- -->
+        <article class="post">
+          <div class="post__actions">
+            <a href="index.html" class="post__actions-link">вернуться назад</a>
+            <a href="#" class="post__actions-link post__actions-link--share" data-modal="share-modal">
+              <p>поделиться</p>
+              <img src="./img/icons/share.svg" alt="поделиться"
+            /></a>
+          </div>
+          <div class="post__header">
+            <h2 class="post__title post__title--mb1 post__title--fz">
+              Как писать код быстро и безболезненно?
+            </h2>
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time class="post__data-time" datetime="21.10.2023"
+                  >21.06.2023</time
+                >
+              </li>
+              <li class="post__data-item">
+                <a href="#" class="post__data-category">создание сайтов</a>
+              </li>
+            </ul>
+          </div>
+          <div class="post__content">
+            <div class="post__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Elementum volutpat orci turpis urna. Et vestibulum,
+                posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat.
+              </p>
+              <p>
+                <img src="./img/post/post_3.jpg" alt="" />
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Elementum volutpat orci turpis urna. Et vestibulum,
+                posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat.
+              </p>
+            </div>
+            <!-- -------------------------------------------------- -->
+            <div class="related">
+              <h3 class="post__subtitle">Интересно почитать</h3>
+              <ul class="related__list">
+                <li class="related__list-item">
+                  <h4 class="related__list-title">
+                    <a href="#">Как я сходила на WebDesign Conf 2023</a>
+                  </h4>
+                  <time class="related__list-date" datetime="21.10.2023"
+                    >21.06.2023</time
+                  >
+                </li>
+                <li class="related__list-item">
+                  <h4 class="related__list-title">
+                    <a href="#">Как писать код быстро и качественно</a>
+                  </h4>
+                  <time class="related__list-date" datetime="21.10.2023"
+                    >21.06.2023</time
+                  >
+                </li>
+                <li class="related__list-item">
+                  <h4 class="related__list-title">
+                    <a href="#">Купил новый ноутбук за 150 000 руб</a>
+                  </h4>
+                  <time class="related__list-date" datetime="21.10.2023"
+                    >21.06.2023</time
+                  >
+                </li>
+                <li class="related__list-item">
+                  <h4 class="related__list-title">
+                    <a href="#">Купил новый ноутбук за 150 000 руб</a>
+                  </h4>
+                  <time class="related__list-date" datetime="21.10.2023"
+                    >21.06.2023</time
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- ------------------------------------------- -->
+            <div class="">
+              <h3 class="post__subtitle">Обсуждение</h3>
+              <form class="form" action="/" method="post">
+                <div class="form__group">
+                  <textarea
+                    class="form__control form__control--textarea"
+                    name="comment-text"
+                    placeholder="Текст комментария"
+                    data-autoresize
+                  ></textarea>
+                  <span class="form__line"></span>
+                </div>
+                <button class="btn btn--blue btn--rounded" type="submit">
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <ul class="comments">
+              <li class="comments__item">
+                <div class="comments__header">
+                  <img
+                    class="comments__avatar"
+                    src="https://placehold.it/30"
+                    alt=""
+                  />
+                  <div class="comments__author">
+                    <div class="comments__name">Дмитрий Валак</div>
+                    <time class="comments__pubdate" datetime="2023-12-21 19:21"
+                      >1 неделю назад</time
+                    >
+                  </div>
+                </div>
+                <div class="comments__text">
+                  Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor
+                  orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
+                  lacinia eu auctor nunc nam id. Diam sit sed volutpat massa.
+                  Egestas ornare vel volutpat.
+                </div>
+                <button class="comments__reply" type="button">ответить</button>
+
+                <ul class="comments">
+                  <li class="comments__item">
+                    <div class="comments__header">
+                      <img
+                        class="comments__avatar"
+                        src="https://placehold.it/30"
+                        alt=""
+                      />
+                      <div class="comments__author">
+                        <div class="comments__name">Дмитрий Валак</div>
+                        <time
+                          class="comments__pubdate"
+                          datetime="2023-12-21 19:21"
+                          >1 неделю назад</time
+                        >
+                      </div>
+                    </div>
+                    <div class="comments__text">
+                      Et vestibulum, posuere tortor lacinia sit. Sagittis
+                      porttitor orci auctor in at tincidunt arcu egestas. Fusce
+                      arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                      volutpat massa. Egestas ornare vel volutpat.
+                    </div>
+                    <button class="comments__reply" type="button">
+                      ответить
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- -------------------------------------------------- -->
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

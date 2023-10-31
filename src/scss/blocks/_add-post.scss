@@ -1,0 +1,94 @@
+.add-post {
+  margin-bottom: 3rem;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.45);
+  background: $bg-add-post;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+
+  @include mobile{
+    padding: 1.2rem;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__area {
+    font-family: inherit;
+    @include text(1.5rem, 300, 1.8rem, $white);
+    display: block;    
+    border: none;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    flex-grow: 1;
+    height: 2.6rem;
+    &::placeholder {
+      color: $text-grey;
+    }
+  }
+
+  &__form-actions {
+    display: flex;
+    gap: 1.5rem; 
+    align-self: flex-end;   
+  }
+
+  &__label {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #ebebeb url(../../img/icons/add_photo.svg) center no-repeat;
+    position: relative;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+        background-color: darken(#ebebeb, 10%);
+    }
+    & input {
+      display: none;
+    }
+
+    @include mobile{
+      width: 3.4rem;
+      height: 3.4rem;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    background: $blue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+        background-color: darken($blue, 10%);
+    }
+
+    @include mobile{
+      width: 3.4rem;
+      height: 3.4rem;
+    }
+  }
+
+  &__btn-img{
+    object-position: center;
+
+    @include mobile{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

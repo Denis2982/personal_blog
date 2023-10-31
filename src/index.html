@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html',{ "title":"Главная" })
+  <body class="">
+    
+    <div class="page">
+      @@include('html/header.html',{})
+    
+    @@include('html/sidebar.html',{})
+    
+    <!-- -----------Main--content--------------------------------------------------------------->
+    <main class="main">
+      <div class="container">
+        <!-- -----------Section--Stories----------------------------------------------------------->
+        <section class="stories">
+          <div class="stories__item" data-modal="story-modal">
+            <img
+              class="stories__preview"
+              src="./img/stories/stories_1.jpg"
+              alt="image stories"
+            />
+            <div class="stories__title">Отдыхаю на природе</div>
+            <time class="stories__date" datetime="21.10.2023">21.10.2023</time>
+          </div>
+          <div class="stories__item" data-modal="story-modal">
+            <img
+              class="stories__preview"
+              src="./img/stories/stories_2.jpg"
+              alt="image stories"
+            />
+            <div class="stories__title">Заканчиваю сложный проект</div>
+            <time class="stories__date" datetime="21.10.2023">15.10.2023</time>
+          </div>
+          <div class="stories__item" data-modal="story-modal">
+            <img
+              class="stories__preview"
+              src="./img/stories/stories_3.jpg"
+              alt="image stories"
+            />
+            <div class="stories__title">Переехал в новую квартиру</div>
+            <time class="stories__date" datetime="21.10.2023">02.10.2023</time>
+          </div>
+          <div class="stories__item" data-modal="story-modal">
+            <img
+              class="stories__preview"
+              src="./img/stories/stories_4.jpg"
+              alt="image stories"
+            />
+            <div class="stories__title">Осень пришла!</div>
+            <time class="stories__date" datetime="21.10.2023">23.09.2023</time>
+          </div>
+        </section>
+        <!--/Section--Stories-->
+
+        <!-- -----------Section--Add--Post--------------------------------------------------------->
+        <section class="add-post">
+          <form class="add-post__form" action="/" method="post">
+            <textarea
+              class="add-post__area"
+              name="post-text"
+              placeholder="Напишите пост"
+              data-autoresize
+            ></textarea>
+            <div class="add-post__form-actions">
+              <label class="add-post__label" for="add-file">
+                <input class="add-post__input" type="file" id="add-file" />
+              </label>
+              <button class="add-post__btn" type="submit">
+                <img
+                  class="add-post__btn-img"
+                  src="./img/icons/send.svg"
+                  alt="Отправить"
+                />
+              </button>
+            </div>
+          </form>
+        </section>
+        <!--/Section--Add--Post-->
+
+        <!-- -----------Section--Post--------------------------------------------------------->
+        <section class="post">
+          <div class="post__content">
+            <p class="post__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+              volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia
+              sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+              Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+              volutpat massa. Egestas ornare vel volutpat.
+            </p>
+          </div>
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time class="post__data-time" datetime="21.10.2023"
+                  >21.06.2023</time
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--/Section--Post-->
+
+        <!-- -----------Section--Post--------------------------------------------------------->
+        <article class="post">
+          <div class="post__header post__header--preview">
+            <a href="post.html" class="post__header-link">
+              <img
+                class="post__preview"
+                src="./img/post/post_1.jpg"
+                alt="Как писать код быстро и безболезненно?"
+              />
+            </a>
+          </div>
+          <div class="post__content">
+            <h2 class="post__title">
+              <a href="post.html" class="post__title-link"
+                >Как писать код быстро и безболезненно?</a
+              >
+            </h2>
+            <p class="post__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+              volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia
+              sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+              Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+              volutpat massa. Egestas ornare vel volutpat.
+            </p>
+          </div>
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time class="post__data-time" datetime="21.10.2023"
+                  >21.06.2023</time
+                >
+              </li>
+              <li class="post__data-item">
+                <a href="post.html" class="post__data-category">создание сайтов</a>
+              </li>
+            </ul>
+            <a class="post__read" href="post.html">читать</a>
+          </div>
+        </article>
+        <!--/Section--Post-->
+
+        <!-- -----------Section--Post--------------------------------------------------------->
+        <article class="post">
+          <div class="post__header">
+            <div class="embed">
+              <iframe
+                src="https://www.youtube.com/embed/Ydh2QfkE6uY?si=2zEH_wIk2VM3mZOB"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="post__content">
+            <h2 class="post__title">
+              <a href="post.html" class="post__title-link"
+                >Купил новый ноутбук за 70 000 грн</a
+              >
+            </h2>
+          </div>
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time class="post__data-time" datetime="21.10.2023"
+                  >21.06.2023</time
+                >
+              </li>
+              <li class="post__data-item">
+                <a href="post.html" class="post__data-category">продвижение видео</a>
+              </li>
+            </ul>
+            <a class="post__read" href="post.html">оставить комментарий</a>
+          </div>
+        </article>
+        <!--/Section--Post-->
+
+        <!-- -----------Section--Post--------------------------------------------------------->
+        <article class="post">
+          <div class="post__header post__header--preview">
+            <a href="post.html" class="post__header-link">
+              <img
+                class="post__preview"
+                src="./img/post/post_2.jpg"
+                alt="Как я сходила на WebDesign Conf 2023"
+              />
+            </a>
+          </div>
+          <div class="post__content">
+            <h2 class="post__title">
+              <a href="post.html" class="post__title-link"
+                >Как я сходила на WebDesign Conf 2023</a
+              >
+            </h2>
+            <p class="post__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+              volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia
+              sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+              Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+              volutpat massa. Egestas ornare vel volutpat.
+            </p>
+          </div>
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time class="post__data-time" datetime="21.10.2023"
+                  >21.09.2023</time
+                >
+              </li>
+              <li class="post__data-item">
+                <a href="#" class="post__data-category">создание сайтов</a>
+              </li>
+            </ul>
+            <a class="post__read" href="post.html">читать</a>
+          </div>
+        </article>
+        <!--/Section--Post-->
+
+        <!-- -----------Section--Pagination--------------------------------------------------------->
+        <section class="pagination">
+          <ul class="pagination__inner">
+            <li class="pagination__item">
+              <a href="#" class="pagination__item-link">&lt;</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__item-link active">1</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__item-link">2</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__item-link">3</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__item-link">&gt;</a>
+            </li>            
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!-- -----------Modal---------------------------------------------------------------------->
+    @@include('html/contact-modal.html',{})
+
+    @@include('html/share-modal.html',{})
+
+    @@include('html/story-modal.html',{})
+
+    </div>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

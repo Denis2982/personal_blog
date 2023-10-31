@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: calc(100% - #{$width-sidebar});
+  height: 4rem;
+  background-color: $bg-header;
+  box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.25);
+  &__right {
+    justify-content: flex-end;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    @include tablet {
+      flex-grow: 1;
+      width: 60%;
+    }
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+
+  &__profile {
+    display: block;
+    @include text(1.1rem, 400, 1.3rem, $white);
+    text-transform: uppercase;
+    padding: 1.5rem;
+    transition: $transition;
+    &:hover {
+      background-color: $blue;
+      text-decoration: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    background-color: $bg-block;
+    box-shadow: -7px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+    max-width: 21rem;
+    width: 100%;
+  }
+
+  &__form-search {
+    @include text(1.2rem, 400, 1.4rem, $white);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    width: 100%;
+
+    &::placeholder {
+      @include text(1.2rem, 400, 1.4rem, rgba(255, 255, 255, 0.4));
+    }
+
+    @include tablet {
+      font-size: 1.6rem;
+      padding: 0.8rem 1rem;
+    }
+  }
+}
+.nav {
+  width: 60%;
+  padding-inline: 1.5rem;
+  &__list {
+    display: flex;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
+      align-items: start;
+      align-items: stretch;
+    }
+  }
+
+  @include tablet {
+    display: none;
+    width: 40%;
+  }
+
+  &--mobile {
+    display: none;
+    width: 100%;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__item {
+    position: relative;
+    &:hover {
+      .nav__link {
+        background-color: $blue;
+        text-decoration: none;
+      }
+      @include tablet {
+        &:hover {
+          .nav__link {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    @include text(1.1rem, 400, 1.3rem, $white);
+    text-transform: uppercase;
+    padding: 1.5rem;
+    transition: $transition;    
+
+    @include tablet {
+      padding-inline: 0;
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+    }
+  }  
+}
+

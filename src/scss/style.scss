@@ -1,0 +1,24 @@
+@import 'normalize';
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'base';
+@import '../../node_modules/swiper/swiper-bundle';
+
+
+
+
+@import 'blocks/header';
+@import 'blocks/burger';
+@import 'blocks/sidebar';
+@import 'blocks/stories';
+@import 'blocks/add-post';
+@import 'blocks/post';
+@import 'blocks/embed';
+@import 'blocks/pagination';
+@import 'blocks/related';
+@import 'blocks/comments';
+@import 'blocks/form';
+@import 'blocks/work';
+@import 'blocks/cabinet';
+@import 'blocks/modal';

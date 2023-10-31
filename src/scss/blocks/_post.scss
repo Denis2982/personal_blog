@@ -1,0 +1,156 @@
+.post {
+  border-radius: 0.5rem;
+  background: $bg-block;
+  box-shadow: 0 1.5rem 2.5rem 0 rgba(0, 0, 0, 0.35);
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+
+  @include mobile {
+    padding: 1.5rem;
+  }
+
+  &__header {
+    margin: 0 0 2.5rem;
+    &--preview {
+      margin: -2.5rem -2.5rem 2.5rem -2.5rem;
+    }
+  }
+  &__preview {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  &__content {
+    margin-bottom: 2rem;
+  }
+  &__title {
+    margin-bottom: 1.5rem;
+    @include text(1.8rem, 500, 2.1rem, $white);
+    &--mb1 {
+      margin-bottom: 1rem;
+    }
+    &--fz {
+      @include text(2.5rem, 700, 3rem, $white);
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    color: $white;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+
+    @include mobile{
+      margin-top: 2rem;
+    }
+  }
+  &__title-link {
+    color: inherit;
+  }
+  &__desc {
+    @include text(1.4rem, 400, 2.1rem, $text-grey);
+  }
+  &__text {
+    @include text(1.4rem, 400, 2.1rem, $white);
+    border-bottom: 0.1rem solid #1c1c1c;
+    padding-bottom: 1rem;
+    h2,
+    h3,
+    h4 {
+      margin-bottom: 1.3rem;
+    }
+    h2 {
+      @include text(2rem, 700, 2.4rem, $white);
+    }
+    h3 {
+      @include text(1.8rem, 600, 2.2rem, $white);
+    }
+    h4 {
+      @include text(1.6rem, 600, 2rem, $white);
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: $blue;
+    }
+    ul,
+    ol {
+      margin-bottom: 2rem;
+    }
+    ol {
+      list-style: decimal;
+      list-style-position: inside;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    @include mobile{
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    @include text(1.2rem, 400, 1.4rem, $text-grey);
+    & a {
+      color: inherit;
+    }
+
+    @include mobile{
+      margin-bottom: 1rem;
+    }
+  }
+  &__data-item {
+    &:not(:last-child):after {
+      content: "";
+      display: inline-block;
+      margin: 0 1.5rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      background-color: $white;
+      position: relative;
+      top: -0.2rem;
+    }
+  }
+  &__read {
+    @include text(1.4rem, 400, 1.6rem, $blue);
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    @include text(1.2rem, 400, 1.4rem, $white);
+
+    &-link {
+      color: inherit;
+      opacity: 0.6;
+      transition: opacity 0.2s linear;
+      &:hover {
+        text-decoration: underline;
+        opacity: 1;
+      }
+      &--share {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+}
